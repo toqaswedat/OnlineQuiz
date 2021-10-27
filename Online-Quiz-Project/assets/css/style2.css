@@ -1,0 +1,399 @@
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Roboto&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Roboto&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+      :root {
+        --primary: linear-gradient(90deg, rgba(253, 70, 82, 1) 50%, rgba(248, 247, 247, 1) 50%);
+        --secondary: #fafafa;
+        --dark: #212121;
+        --light: #fafafa;
+        --gray: #9e9e9e;
+        --red: #f44336;
+        --green: #4caf50;
+        --blue: #2196f3;
+        --primary-color: #383882;
+        --secondry-color: #5b58c2;
+
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+       
+       background: var(--primary);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      header{
+        height: 20vh;
+      }
+      /* radio */
+      .radio {
+        /*visibility: hidden;*/
+
+        /* display: flex; 
+     justify-content: center;
+     align-items: center;
+    */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #4b5677;
+
+      }
+
+      .quiz-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .resultimg{
+          width: 50%;
+          margin: 1em;
+      }
+
+      .quiz-answer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      /* logot button  */
+      .container1 .logoutBtn {
+        margin: 2em;
+      }
+
+      .container1 .logoutBtn a {
+        color: black;
+        text-decoration: none;
+        font-size: 2em;
+      }
+
+      .container1 .logoutBtn a i:hover {
+        transform: scale(1.3);
+      }
+
+
+      /* navbar layout and background color */
+      .container1 {
+        display: flex;
+        justify-content: space-between;
+      
+    
+      }
+
+      /* logo img margin and width and height */
+      .logo img {
+        width: 5em;
+        height: auto;
+        margin: 1em;
+      }
+
+
+      /* ul navbar layout and margin and list-style  */
+      .navbar ul {
+        display: flex;
+        /* margin: 2em; */
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        flex-direction: row-reverse;
+      }
+      .navbar{
+        display: flex;
+        align-items: center;
+      }
+      /* icons margin  */
+      .navbar ul li {
+        margin-right: 1em;
+      }
+
+      /* icons links font-size  */
+      .navbar ul li a {
+        text-decoration: none;
+        font-size: 3em;
+        color: var(--red);
+      }
+
+      /* icons in hover scale  */
+      .navbar ul li a i:hover {
+        transform: scale(1.3);
+      }
+
+     footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 20vh;
+     }
+
+      /* main background and layout and center */
+      main {
+
+        display: flex;
+        justify-content: center;
+        height: 60vh;
+       
+
+      }
+
+      /* main layout and center  */
+      .secondPage {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* height: 100vh; */
+        /* justify-content: center; */
+      }
+
+      /* font-size welcoming and estimatedTime */
+      .welcoming {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+            /* max-width: 62%;
+            width: 58%; */
+            background-color: #f8f7f7;
+            padding: 1.5rem;
+            border: 1em #f8f7f7 solid;
+            border-radius: 1em;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 43%),
+            0 4px 6px -2px rgb(0 0 0 / 5%);
+            
+      }
+      .welcoming h1 ,.welcoming h2, .welcoming p {
+        border-bottom: dotted solid black;
+      }
+
+      .welcoming .estimatedTime {
+        font-size: 1.5rem;
+      }
+
+      /* button let`s start layout and cursor  */
+
+      .secondPage .letsStart {
+        display: flex;
+        cursor: pointer;
+        background-color:#000;
+        justify-content: center;
+        
+      
+        font-size: 1em;
+        /*  */
+          padding: 0.8em 2em;
+          border-radius: 0.2em;
+          color: #fff;
+          font-size: 1em;
+          border-style: none;
+
+      }
+
+      .secondPage .letsStart:hover {
+        transform: scale(1.1);
+        background-color: var(--secondry-color);
+      }
+
+      /* Next and End Quiz padding and background  */
+      .nextButton,
+      .endQuiz,
+      .show,
+      .hideBtn {
+           padding: 0.8em 2em;
+           border-radius: 0.2em;
+        background: rgb(253, 70, 82);
+       color: #fff;
+        font-size: 1em;
+        border-style: none;
+
+      }
+
+      ul {
+        display: flex;
+      }
+
+      .quiz-answer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+      }
+
+      .quiz-content {
+
+        max-width: 50%;
+        width: 40%;
+        /* padding: 0 15px; */
+                background-color: #f8f7f7;
+            padding: 1.5rem;
+            border: 1em #f8f7f7 solid;
+            border-radius: 1em;
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 43%),
+                0 4px 6px -2px rgb(0 0 0 / 5%);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;        
+      }
+
+      .quiz-question {
+            color: #fd4652;
+        font-size: 1.8em;
+        margin: 1.5em 0;
+      }
+
+      label {
+        cursor: pointer;
+         transition: transform 200ms ease-in;
+      }
+
+      table {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        border: 1 solid #343a40;
+        border-collapse: collapse;
+        font-family: 'Inter',
+          sans-serif;
+          width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #343a40;
+        
+        text-align: left;
+      }
+
+      td:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      th {
+        background-color: #087f5b;
+        color: #fff;
+        width: 25%;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+
+      tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+      }
+
+      .choice {
+        display: none;
+        align-items: center;
+        background-color: #746f7121;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        color: #000;
+        font-size: 1.3em;
+        cursor: pointer;
+        height: 4rem;
+        width: 100%;
+      }
+
+      input[submit] {
+        width: 25%;
+      }
+      input{
+        cursor: pointer;
+      }
+      input[type="radio"]:hover~label {
+        transform: translateX(0.4rem);
+      }
+      
+    
+     
+   
+
+      .container1 ul li {
+        font-size: 0.6em;
+           }
+
+
+      /* Responsive  */
+      /* @media screen and (max-width: 480px){
+
+      } */
+      table{
+        font-size: 90%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        table{
+          font-size: 0.6em;
+
+        }
+        
+      }
+       @media screen and (max-width: 480px) {
+        .quiz-question {
+          font-size: 1.2em;
+        }
+        .quiz-content {
+          width: 70%;
+              max-width: 70%;
+            
+        }
+        .choice{
+          font-size: 1em;
+        }
+        label {
+          font-size: 0.8em;
+          text-align: left;
+        }
+        td{
+          padding: 0.4em;
+        }
+        
+        .quiz-content h2{
+          font-size: 1.2em;
+        }
+        .nextButton,
+        .endQuiz,
+        .show,
+        .hideBtn {
+          padding: 0.5em 1em;
+          font-size: 0.8em;
+        
+        }
+
+    
+
+       }
+
+       @media(max-width:768px){
+         .welcoming{
+          max-width: 62%;
+          width: 58%;
+         }
+        content{
+        max-width: 70%
+        }
+       
+      
+       }
+
+       @media screen and (max-width: 361px) {
+        .welcoming .estimatedTime, .quiz-title{
+          font-size: 0.7em;
+        }
+     
+       }

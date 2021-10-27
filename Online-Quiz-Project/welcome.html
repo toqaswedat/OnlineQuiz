@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Trees Group</title>
+    <!-- icons cdnjs -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <!-- Css Style -->
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <style>
+  .radio{
+    visibility : hidden;
+      
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container1">
+          <div class="logo"><img src="./assets/images/fivetreeslogo.png"  alt=""/></div>
+          <div class="logoutBtn">
+            <a href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+          </div>
+          <div class="navbar">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/Groupthreeoca"
+                  ><i class="fa-brands fa-github" target="_blank"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook" target="_blank"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    <main class="secondPage">
+
+      <div class="welcoming">
+        <h2 style=" display:inline-block">Welcome</h2>
+        <h1 class="insertName" style="display: inline-block;" ></h1>
+        <h2>let's see what you're made
+          of...</h2>
+        <p class="estimatedTime" style="display: inline-block;">Estimated time for this quiz :5 minutes</p>
+      
+      </div> 
+
+
+          
+        <div class="quiz-container">
+            <!-- button let's start -->
+            <button class="letsStart">let's start</button>
+
+
+            <div class="quiz-content">
+                <h4 class="quiz-question"> </h4>
+    
+                <div class="quiz-answer">
+                    <!-- <form action=""> -->
+                    <div class="choice">
+                        <input type="radio" id="answer1" name="answer"  value="1"  class="radio"><label for="answer1" id="a1"></label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="answer2" name="answer"  value="2"  class="radio"><label for="answer2" id="a2"></label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="answer3" name="answer"  value="3"  class="radio"><label for="answer3" id="a3"></label>
+                    </div>
+                    <!-- /.options -->
+                    
+                    <!-- </form> -->
+                </div>
+                <!-- <input type="submit" value="Hide Result" class="hideBtn"> -->
+              <input type="submit" value="Next" class="nextButton">
+            </div>
+
+            <!-- <input type="submit" value=" End Quiz" class="endQuiz"> -->
+          
+        </div>
+
+    </main>
+
+    <footer><p class="footerText">&copy; 2021 all rights reserved</p></footer>
+    <!-- JS Files -->
+    <script src="answerValidation.js"></script>
+    <!-- <script src="./scripts/main.js"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    
+</body>
+</html>
